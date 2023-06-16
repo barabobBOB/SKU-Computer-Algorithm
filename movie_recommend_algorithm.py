@@ -15,7 +15,6 @@ def data_transform():
 
     data=pd.read_csv('tmdb_5000_movies.csv',encoding='utf-8')
 
-
     data=data[['영화번호','제목','장르','평점','평점투표 수','인기도','키워드']]
 
     m=data['평점투표 수'].quantile(0.9)
