@@ -63,6 +63,9 @@ def data_transform():
     
     return data
 
+"""
+코사인 유사도 계산을 바탕으로 영화를 추천합니다.
+"""
 def get_recommed_movie_list(movie_title,top=30):
     # 데이터를 변환하는 함수를 호출하여 데이터프레임을 얻음
     df = data_transform()
